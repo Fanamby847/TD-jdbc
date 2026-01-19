@@ -1,3 +1,5 @@
+set search_path to public;
+
 insert into dish (id, name, dish_type)
 values (1, 'Salaide fraîche', 'STARTER'),
        (2, 'Poulet grillé', 'MAIN'),

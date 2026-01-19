@@ -1,5 +1,5 @@
-ALTER TABLE ingredient
-DROP COLUMN id_dish;
+/*ALTER TABLE ingredient
+DROP COLUMN id_dish;*/
 
 
 ALTER TABLE dish
