@@ -21,8 +21,8 @@ public class Main {
 
         System.out.println("\n=== Creating Dish with DishIngredients ===");
         List<DishIngredient> dishIngredients = new ArrayList<>();
-        dishIngredients.add(new DishIngredient(newIngredients.get(0), 0.2)); // 0.2 kg fromage
-        dishIngredients.add(new DishIngredient(newIngredients.get(1), 0.15)); // 0.15 kg oignon
+        dishIngredients.add(new DishIngredient(newIngredients.get(0), 0.2)); 
+        dishIngredients.add(new DishIngredient(newIngredients.get(1), 0.15)); 
 
         Dish newDish = dataRetriever.saveDishWithDishIngredients(
                 "Salade fromagère",
