@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Ingredient {
@@ -6,6 +8,7 @@ public class Ingredient {
     private CategoryEnum category;
     private Double price;
     private Double quantity;
+    private List<StockMovement> stockMovementList;
 
     public Double getQuantity() {
         return quantity;
@@ -13,6 +16,17 @@ public class Ingredient {
 
     public void setQuantity(Double quantity) {
         this.quantity = quantity;
+    }
+
+    public List<StockMovement> getStockMovementList() {
+        if (stockMovementList == null) {
+            stockMovementList = new ArrayList<>();
+        }
+        return stockMovementList;
+    }
+
+    public void setStockMovementList(List<StockMovement> stockMovementList) {
+        this.stockMovementList = stockMovementList;
     }
 
     public Ingredient() {
