@@ -2,7 +2,7 @@ import java.time.Instant;
 import java.util.List;
 import java.util.Objects;
 
-public class Order {
+/*public class Order {
     private Integer id;
     private String reference;
     private Instant creationDatetime;
@@ -100,4 +100,4 @@ public class Order {
     public int hashCode() {
         return Objects.hash(id, reference, creationDatetime, dishOrderList);
     }
-}
+}*/
