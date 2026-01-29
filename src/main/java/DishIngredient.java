@@ -1,21 +1,49 @@
+
+
 public class DishIngredient {
-    private Integer id;
     private Dish dish;
     private Ingredient ingredient;
     private Double quantity;
-    private String unit;
+    private Unit unit;
 
-    public DishIngredient(Integer id, Dish dish, Ingredient ingredient, Double quantity, String unit) {
-        this.id = id;
-        this.dish = dish;
+    public Ingredient getIngredient() {
+        return ingredient;
+    }
+
+    public void setIngredient(Ingredient ingredient) {
         this.ingredient = ingredient;
+    }
+
+    public Double getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Double quantity) {
         this.quantity = quantity;
+    }
+
+    public Unit getUnit() {
+        return unit;
+    }
+
+    public void setUnit(Unit unit) {
         this.unit = unit;
     }
 
-    public Double getCost() {
-        return ingredient.getPrice() * quantity;
+    public Dish getDish() {
+        return dish;
     }
 
-    // getters
+    public void setDish(Dish dish) {
+        this.dish = dish;
+    }
+
+    @Override
+    public String toString() {
+        return "DishIngredient{" +
+                "ingredient=" + ingredient +
+                ", quantity=" + quantity +
+                ", unit=" + unit +
+                '}';
+    }
 }

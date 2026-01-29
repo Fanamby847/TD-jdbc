@@ -25,3 +25,14 @@ update dish
 set price = 6000.0
 where id = 2;
 
+INSERT INTO dish (name, dish_type, price)
+VALUES
+    ('Pizza', 'MAIN', 15000),
+    ('Burger', 'MAIN', 12000),
+    ('Jus', 'STARTER', 3000);
+
+INSERT INTO orders (reference)
+VALUES ('CMD-001');
+
+INSERT INTO dish_order (id_order, id_dish, quantity)
+VALUES (1, 1, 2);
